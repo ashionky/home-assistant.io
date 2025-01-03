@@ -43,19 +43,19 @@ The integration uses the following strategy to name its entity:
 
 ## Binary input sensors
 
-It's possible to select if a device's input is connected to a button or a switch. Binary sensors are created only if the input mode is set to `switch`. When the input is of type `button` you need to use events for your automations.
+It's possible to select if a device's input is connected to a button or a switch. Binary sensors are created only if the input mode is set to `switch`. When the input mode is set to `button` you can use events for your automations.
 
 ## Events
 
-If the **BUTTON TYPE** of the switch connected to the device is set to `momentary` or `detached`, integration fires events under the type `refoss.click` when the switch is used. You can use these events in your automations.
+If device's input mode is set to `button`, integration fires events under the type `refoss.click` when the switch is used. You can use these events in your automations.
 
 ### Automations
 
-The simplest way to create automations is to use the Home Assistant automation editor. For example, to set an automation triggered by a double press of a particular Refoss Button1:
+The simplest way to create automations is to use the Home Assistant automation editor. For example, to set an automation triggered by a double press of a particular R11 Button1:
 
 1. In the Triggers section of the automation, set Trigger Type to `Device`.
-2. In the Device dropdown menu. find the Refoss Button1.
-3. In the Trigger dropdown menu, select `Button double clicked`.
+2. In the Device dropdown menu. find the R11.
+3. In the Trigger dropdown menu, select `Button1 double push`.
 4. Set any conditions and actions to complete your automation.
 
 ### Possible values for `click_type`
