@@ -36,7 +36,7 @@ Integrate Refoss devices into Home Assistant.
  
 ### Discover device
 
-  - After integrating Refoss SCAN, it will start socket broadcast and Home Assistant will automatically discover Refoss devices under the current LAN.
+After integrating Refoss SCAN, it will start socket broadcast and Home Assistant will automatically discover Refoss devices under the current LAN.
   
 ## Entity naming
 
