@@ -2,12 +2,13 @@
 title: Refoss RPC
 description: Integrate Refoss devices that support `RPC` protocol.
 ha_category:
-  - Sensor
-  - Switch
   - Binary sensor
+  - Energy
+  - Switch
+  - Sensor
   - Event
   - Update
-ha_release: 2025.1
+ha_release: 2025.2
 ha_codeowners:
   - '@ashionky'
 ha_iot_class: Local Push
@@ -15,9 +16,9 @@ ha_domain: refoss_rpc
 ha_config_flow: true
 ha_dhcp: true
 ha_platforms:
-  - sensor
-  - switch
   - binary_sensor
+  - switch
+  - sensor
   - event
   - update
   - button
