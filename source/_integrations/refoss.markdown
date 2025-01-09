@@ -67,6 +67,18 @@ Long-press the button on the device to reset it.
 
 ## Known issues
 
-- When prompted: `No devices found on the network`:
-  - Check if the device and Home Assistant are on the same network.
-  - Start Home Assistant in debug mode and add it again, check if any devices are found in the logs,log keyword: `Discovered devices`, If you don't see the device, please check the network and device version.
+### No devices found on the network
+
+If you encounter this issue:
+1. Verify that your Refoss device and Home Assistant are on the same network
+2. Enable debug logging for the integration:
+   ```yaml
+   logger:
+     logs:
+       homeassistant.components.refoss: debug
+   ```
+3. Restart Home Assistant and attempt to add the integration again
+4. Check the logs for messages containing "Discovered devices"
+5. If no devices are found, verify:
+   - Network connectivity
+   - Device firmware version matches the supported versions listed above
