@@ -14,7 +14,7 @@ ha_codeowners:
 ha_iot_class: Local Push
 ha_domain: refoss_rpc
 ha_config_flow: true
-ha_dhcp: true
+ha_zeroconf: true
 ha_platforms:
   - binary_sensor
   - switch
