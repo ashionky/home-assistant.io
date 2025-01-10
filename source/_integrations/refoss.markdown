@@ -69,7 +69,7 @@ Long-press the button on the device to reset it.
 
 ### No devices found on the network
 
-If no devices are found on the network. To debug this issue, follow these steps:
+To debug this issue, follow these steps:
 1. Verify that your Refoss device and Home Assistant are on the same network
 2. Enable debug logging for the integration:
    ```yaml
